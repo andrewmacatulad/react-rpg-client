@@ -225,8 +225,11 @@ class Header extends Component {
             <Button component={Link} to="/protected">
               Protected
             </Button>
-            <Button component={Link} to="/attributes">
+            {/* <Button component={Link} to="/attributes">
               Attributes
+            </Button> */}{" "}
+            <Button component={Link} to="/upload_image">
+              Image Upload
             </Button>
             <Button component={Link} to="/attribute_table">
               Attribute Table
@@ -261,7 +264,6 @@ class Header extends Component {
                 <AccountCircle />
               </IconButton>
             </div>
-
             <div className={classes.sectionMobile}>
               <IconButton
                 aria-haspopup="true"

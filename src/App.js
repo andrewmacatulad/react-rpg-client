@@ -20,6 +20,7 @@ import AttributeTable from "./component/Attributes/AttributeTable";
 import ProfileDashboard from "./component/Profile/ProfileDashboard";
 import ReactSelect from "./component/SelectReact";
 import { Container } from "@material-ui/core";
+import UploadForm from "./component/UploadForm/UploadForm";
 
 const AsyncHomePage = Loadable({
   loader: () => import("./component/HomePage"),
@@ -106,6 +107,7 @@ class App extends Component {
             <Route path="/quests" component={AsyncQuestDashboardPage} />
             <PrivateRoute path="/quest_add" component={AsyncQuestAddPage} />
             <Route path="/:userId/quest/:questId" component={AsyncQuestPage} />
+            <Route path="/upload_image" component={UploadForm} />
             <Route component={AsyncNotFoundPage} />
           </Switch>
         </Container>
